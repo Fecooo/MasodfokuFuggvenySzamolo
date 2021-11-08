@@ -4,7 +4,6 @@ import math
 import colorama
 from colorama import Fore
 from colored import fg
-import os
 
 zold=fg('green')
 print("")
