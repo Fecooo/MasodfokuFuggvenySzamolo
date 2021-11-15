@@ -67,6 +67,42 @@ def program():
             print(Fore.WHITE + " --> " + Fore.YELLOW + "x1 = " + Fore.LIGHTBLUE_EX + "{0:.2f}\n".format(x1))
             print(Fore.WHITE + " --> " + Fore.YELLOW + "x2 = " + Fore.LIGHTBLUE_EX + "{0:.2f}".format(x2))
 
+
+        print(Fore.RED + " .")
+        time.sleep(1)
+        print(Fore.RED + " .")
+        time.sleep(1)
+        print(Fore.RED + " .")
+        time.sleep(1)
+
+        D = (b*b)-4*a*c
+
+        print(Fore.WHITE + " --> " + Fore.YELLOW + "D =" + Fore.LIGHTBLUE_EX + " b² - 4ac")
+        time.sleep(2)
+        print(Fore.WHITE + " --> " + Fore.YELLOW + "D =" + Fore.LIGHTBLUE_EX + " {}² - 4 * {} * {}".format(b, a, c))
+        time.sleep(2)
+
+        elsoertek = b*b
+        masodikertek = -4*a*c
+        osszeg = elsoertek + masodikertek
+        if masodikertek > 0:
+            print(Fore.WHITE + " --> " + Fore.YELLOW + "D =" + Fore.LIGHTBLUE_EX + " {} + {} = {}".format(elsoertek, masodikertek, osszeg))
+        elif masodikertek < 0:
+            print(Fore.WHITE + " --> " + Fore.YELLOW + "D =" + Fore.LIGHTBLUE_EX + " {} {} = {}".format(elsoertek, masodikertek, osszeg))
+        else:
+            print("Hiba")   
+
+        if D < 0:
+            print(Fore.LIGHTBLUE_EX + "Az egyenletnek " + Fore.MAGENTA + "nincs " + Fore.LIGHTBLUE_EX + "valós gyöke")
+        elif D == 0:
+            print(Fore.LIGHTBLUE_EX + "Az egyenletnek " + Fore.MAGENTA + "két egybeeső gyöke " + Fore.LIGHTBLUE_EX + "van")
+        elif D > 0:
+            print(Fore.LIGHTBLUE_EX + "Az egyenletnek " + Fore.MAGENTA + "két különböző valós " + Fore.LIGHTBLUE_EX + "gyöke van")
+        else:
+            print("Hiba")
+
+
+
     else:
         print(Fore.WHITE + " --> " + Fore.YELLOW + "1. lépés: " + Fore.LIGHTBLUE_EX + "-{} +/- √{}² - 4 * {} * {} / 2*{}\n".format(b,b,a,c,a))
         time.sleep(2)
@@ -109,6 +145,41 @@ def program():
             x2 = (-1 * b - gyokszamolas) / nevezoszorzas
             print(Fore.WHITE + " --> " + Fore.YELLOW + "x1 = " + Fore.LIGHTBLUE_EX + "{0:.2f}\n".format(x1))
             print(Fore.WHITE + " --> " + Fore.YELLOW + "x2 = " + Fore.LIGHTBLUE_EX + "{0:.2f}".format(x2))    
+
+
+
+        print(Fore.RED + " .")
+        time.sleep(1)
+        print(Fore.RED + " .")
+        time.sleep(1)
+        print(Fore.RED + " .")
+        time.sleep(1)
+
+        D = (b*b)-4*a*c
+
+        print(Fore.WHITE + " --> " + Fore.YELLOW + "D =" + Fore.LIGHTBLUE_EX + " b² - 4ac")
+        time.sleep(2)
+        print(Fore.WHITE + " --> " + Fore.YELLOW + "D =" + Fore.LIGHTBLUE_EX + " {}² - 4 * {} * {}".format(b, a, c))
+        time.sleep(2)
+
+        elsoertek = b*b
+        masodikertek = -4*a*c
+        osszeg = elsoertek + masodikertek
+        if masodikertek > 0:
+            print(Fore.WHITE + " --> " + Fore.YELLOW + "D =" + Fore.LIGHTBLUE_EX + " {} + {} = {}".format(elsoertek, masodikertek, osszeg))
+        elif masodikertek < 0:
+            print(Fore.WHITE + " --> " + Fore.YELLOW + "D =" + Fore.LIGHTBLUE_EX + " {} {} = {}".format(elsoertek, masodikertek, osszeg))
+        else:
+            print("Hiba")    
+
+        if D < 0:
+            print(Fore.LIGHTBLUE_EX + "Az egyenletnek " + Fore.MAGENTA + "nincs " + Fore.LIGHTBLUE_EX + "valós gyöke")
+        elif D == 0:
+            print(Fore.LIGHTBLUE_EX + "Az egyenletnek " + Fore.MAGENTA + "két egybeeső gyöke " + Fore.LIGHTBLUE_EX + "van")
+        elif D > 0:
+            print(Fore.LIGHTBLUE_EX + "Az egyenletnek " + Fore.MAGENTA + "két különböző valós " + Fore.LIGHTBLUE_EX + "gyöke van")
+        else:
+            print("Hiba")
 
     print(Fore.RED + "===============================================================================")
     restart = input(Fore.GREEN + " Akarsz megint számolni?" +
